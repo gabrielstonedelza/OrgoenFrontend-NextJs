@@ -1,0 +1,52 @@
+@import '../variable';
+.maincontainer{
+
+    .serviceheading{
+        padding: 2.5rem;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    .servicecontainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap: 1rem;
+        .box{
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: $border;
+            border-radius: 10px;
+            .img{
+                width: 200px;
+                height: 200px;
+                
+            }
+            .btn{
+                font-weight: bold;
+                display: inline-block;
+                padding: .9rem 3rem;
+                font-size:1.7rem;
+                color: $black;
+                background-color: $main-color;
+                cursor: pointer;
+                border-radius: 10px;
+                &:hover{
+                    letter-spacing: .2rem;
+                }
+            }
+            &:hover{
+                background: rgb(134, 133, 133);
+                .btn{
+                    letter-spacing: .2rem;
+                }
+            }
+        }
+    }
+}

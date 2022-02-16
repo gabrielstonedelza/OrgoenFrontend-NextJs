@@ -1,0 +1,76 @@
+@import "../variable";
+
+.mainteamcontainer {
+  .teamtitle {
+    color: #fff;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  .myteam {
+    max-width: 1200px;
+    // height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    padding: 20px;
+    .teambox {
+      background: $black;
+      padding: 2rem;
+      width: 250px;
+      height: 350px;
+      transition: ease 1s;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+      border: $border;
+
+      .myimageandsocial {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        .myimage {
+          border-radius: 50%;
+        }
+        .sociallinks {
+          cursor: pointer;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: ease 1s;
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+      &:hover {
+        border: 1px silver;
+        border-radius: 10px;
+        background: rgba(39, 39, 39, 0.705);
+        .sociallinks {
+          opacity: 1;
+        }
+      }
+      .teaminfo {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        gap: 1rem;
+        small{
+            font-size:1.2rem;
+        }
+      }
+    }
+  }
+}

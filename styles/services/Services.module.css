@@ -1,0 +1,70 @@
+.maincontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.maincontainer .serviceheading {
+  padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.maincontainer .servicecontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+.maincontainer .servicecontainer .box {
+  padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.maincontainer .servicecontainer .box .img {
+  width: 200px;
+  height: 200px;
+}
+
+.maincontainer .servicecontainer .box .btn {
+  font-weight: bold;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #13131a;
+  background-color: #d3ad7f;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.maincontainer .servicecontainer .box .btn:hover {
+  letter-spacing: .2rem;
+}
+
+.maincontainer .servicecontainer .box:hover {
+  background: #868585;
+}
+
+.maincontainer .servicecontainer .box:hover .btn {
+  letter-spacing: .2rem;
+}
+/*# sourceMappingURL=Services.module.css.map */

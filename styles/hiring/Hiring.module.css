@@ -1,0 +1,54 @@
+.title {
+  text-align: center;
+  padding: 2rem;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.container .paimg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  display: block;
+}
+
+.container .paduties {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #13131a;
+  padding: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container .paduties .dtitle {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.container .paduties p {
+  font-size: 2.5rem;
+  color: #fff;
+}
+/*# sourceMappingURL=Hiring.module.css.map */
