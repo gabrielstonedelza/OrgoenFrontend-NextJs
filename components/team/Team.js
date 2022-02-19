@@ -2,6 +2,7 @@ import Image from "next/image";
 import Akofa from "../../assets/images/f71e4e8d-4cf0-48a5-9e8c-f0bd837ceb66.JPG";
 import Gabriel from "../../assets/images/ae2032cf-ddff-4022-8eae-93d3c5e3ddf9.jpg";
 import Emma from "../../assets/images/WhatsApp-Image-2019-06-25-at-16.32.41-731x1024.jpeg";
+import James from '../../assets/images/83ba8046-c9c8-46ce-9e24-c270c790eb71.JPG';
 import Default from "../../assets/images/boy.png";
 import styles from "../../styles/team/Team.module.css";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
@@ -23,12 +24,12 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <Link href="https://web.facebook.com/joselyn.amenyo" passHref>
+                            <a href="https://web.facebook.com/joselyn.amenyo" target="_blank">
                                 <FaFacebookF className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://www.instagram.com/josekyn4448/" passHref>
+                            </a>
+                            <a href="https://www.instagram.com/josekyn4448/" target="_blank">
                                 <FaInstagram className={styles.socialicon} />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.teaminfo}>
@@ -47,21 +48,21 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <Link href="https://web.facebook.com/connect.django/" passHref>
+                            <a href="https://web.facebook.com/connect.django/" target="_blank">
                                 <FaFacebookF className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://www.instagram.com/gabriel_stonedelza/" passHref>
+                            </a>
+                            <a href="https://www.instagram.com/gabriel_stonedelza/" target="_blank">
                                 <FaInstagram className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://www.linkedin.com/in/gabriel-akwasi-asare-2367021a6/" passHref>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gabriel-akwasi-asare-2367021a6/" target="_blank">
                                 <FaLinkedin className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://github.com/gabrielstonedelza" passHref>
+                            </a>
+                            <a href="https://github.com/gabrielstonedelza" target="_blank">
                                 <FaGithub className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://twitter.com/gabriel_stone_" passHref>
+                            </a>
+                            <a href="https://twitter.com/gabriel_stone_" target="_blank">
                                 <FaTwitter className={styles.socialicon} />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.teaminfo}>
@@ -80,45 +81,49 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <Link href="https://web.facebook.com/asti.christlike" passHref>
+                            <a href="https://web.facebook.com/asti.christlike" target="_blank">
                                 <FaFacebookF className={styles.socialicon} />
-                            </Link>
-                            <Link href="https://www.instagram.com/asti_van_sweet/" passHref>
+                            </a>
+                            <a href="https://www.instagram.com/asti_van_sweet/" target="_blank">
                                 <FaInstagram className={styles.socialicon} />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.teaminfo}>
                         <h3 className={styles.teamname}>Mr Emmanuel Nimako Mensah</h3>
-                        <small className={styles.position}>IT / Social Media</small>
+                        <small className={styles.position}>Social Media Rep</small>
                     </div>
                 </div>
                 <div className={styles.teambox}>
-                    <Image
-                        src={Default}
-                        alt="team poster"
-                        width={150}
-                        height={150}
-                        className={styles.myimage}
-                        objectFit="cover"
-                    />
-                    <div className={styles.teaminfo}>
-                        <h3 className={styles.teamname}>James Yaw Anane</h3>
-                        <small className={styles.position}>Project Manager</small>
+                    <div className={styles.myimageandsocial}>
+                        <Image
+                            src={James}
+                            alt="team poster"
+                            width={150}
+                            height={150}
+                            className={styles.myimage}
+                            objectFit="cover"
+                        />
+                        <div className={styles.teaminfo}>
+                            <h3 className={styles.teamname}>James Yaw Anane</h3>
+                            <small className={styles.position}>Project Manager</small>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.teambox}>
-                    <Image
-                        src={Default}
-                        alt="team poster"
-                        width={150}
-                        height={150}
-                        className={styles.myimage}
-                        objectFit="cover"
-                    />
-                    <div className={styles.teaminfo}>
-                        <h3 className={styles.teamname}>Eunice Acheampong</h3>
-                        <small className={styles.position}>Secretary</small>
+                    <div className={styles.myimageandsocial}>
+                        <Image
+                            src={Default}
+                            alt="team poster"
+                            width={150}
+                            height={150}
+                            className={styles.myimage}
+                            objectFit="cover"
+                        />
+                        <div className={styles.teaminfo}>
+                            <h3 className={styles.teamname}>Eunice Acheampong</h3>
+                            <small className={styles.position}>Secretary</small>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 
 .mainteamcontainer {
   .teamtitle {
-    color: #fff;
+    color: $main-color;
     padding: 2.5rem;
     display: flex;
     justify-content: center;
@@ -14,12 +14,12 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 20px;
     .teambox {
       background: $black;
       padding: 2rem;
-      width: 250px;
+      // width: 250px;
       height: 350px;
       transition: ease 1s;
       display: flex;
@@ -38,6 +38,7 @@
         align-items: center;
         .myimage {
           border-radius: 50%;
+          border: 1px solid $border;
         }
         .sociallinks {
           cursor: pointer;
@@ -48,13 +49,17 @@
           opacity: 0;
           transition: ease 1s;
           font-size: 2rem;
-          color: #fff;
+          a{
+            color: #fff;
+
+          }
         }
       }
       &:hover {
         border: 1px silver;
         border-radius: 10px;
         background: rgba(39, 39, 39, 0.705);
+        letter-spacing: .2rem;
         .sociallinks {
           opacity: 1;
         }
@@ -68,7 +73,8 @@
         font-size: 1.5rem;
         gap: 1rem;
         small{
-            font-size:1.2rem;
+            font-size:1.5rem;
+            color: $main-color;
         }
       }
     }
