@@ -1,13 +1,23 @@
-@import '../variable';
+@import "../variable";
 
+.maincontainer {
+  position: relative;
+  width: 100%;
+  // height: 50vh;
+  z-index: 1;
+  background-image: url("../../public/new_wave_102.7817844668999.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 
-.title{
+  .title {
     text-align: center;
     padding: 2rem;
     font-size: 3.5rem;
-    color: #fff;
-}
-.container{
+    color: $main-color;
+  }
+  .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -16,30 +26,88 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    
-    .paimg{
-        flex: 1;
-        width: 100%;
-        display: block;
+
+    .position {
+      display: flex;
+      background: $black;
+      border-radius: 10px;
+      padding: 2.5rem;
+      gap: 1rem;
+      border: $border;
+      .paimage {
+        .paimg {
+          flex: 1;
+          width: 100%;
+          display: block;
+        }
+        h4 {
+          color: $main-color;
+          font-size: 1.3rem;
+          text-align: start;
+          padding: 2rem;
+        }
+      }
     }
 
-    .paduties{
-        flex: 1;
+    .paduties {
+      flex: 1;
+      line-height: 1.5;
+      text-align: start;
+
+      .dtitle {
+        font-size: 3rem;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+  }
+}
+@media (min-width: 450px) {
+  .maincontainer{
+    .title {
+      text-align: center;
+      padding: 1rem;
+      font-size: 3rem;
+      color: $main-color;
+    }
+    .container {
+      gap: 1rem;
+      padding: 10px;
+      .position {
+        display: flex;
         background: $black;
-        padding: 2.5rem;
-        
-        line-height: 1.5;
-        text-align: center;
         border-radius: 10px;
-        .dtitle{
-            font-size: 3rem;
-            color: #fff;
-
+        padding: 2rem;
+        gap: 1rem;
+        border: $border;
+        .paimage {
+          .paimg {
+            width: 100%;
+          }
+          h4 {
+            color: $main-color;
+            font-size: 1rem;
+            text-align: start;
+          }
         }
-        p{
-            font-size:2.5rem;
-            color: #fff;
+      }
+      .paduties {
+        flex: 1;
+        line-height: 1.5;
+        text-align: start;
+  
+        .dtitle {
+          font-size: 2rem;
+          color: #fff;
         }
-
+        p {
+          font-size: 1.5rem;
+          color: #fff;
+        }
+      }
     }
+  }
 }

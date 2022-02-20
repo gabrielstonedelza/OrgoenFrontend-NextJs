@@ -8,6 +8,8 @@ import Medical from "../../assets/images/mediacal.png";
 
 const Services = () => {
     return (
+        <div className={serviceStyle.myservicecontainer}>
+
         <div className={serviceStyle.maincontainer}>
             <h3 className={serviceStyle.serviceheading}>Our Services</h3>
             <div className={serviceStyle.servicecontainer}>
@@ -85,6 +87,7 @@ const Services = () => {
                     
                 </div>
             </div>
+        </div>
         </div>
        
     )

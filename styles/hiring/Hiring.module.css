@@ -1,11 +1,22 @@
-.title {
+.maincontainer {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../../public/new_wave_102.7817844668999.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.maincontainer .title {
   text-align: center;
   padding: 2rem;
   font-size: 3.5rem;
-  color: #fff;
+  color: #d3ad7f;
 }
 
-.container {
+.maincontainer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -23,7 +34,18 @@
   gap: 2rem;
 }
 
-.container .paimg {
+.maincontainer .container .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #13131a;
+  border-radius: 10px;
+  padding: 2.5rem;
+  gap: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.maincontainer .container .position .paimage .paimg {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -31,24 +53,74 @@
   display: block;
 }
 
-.container .paduties {
+.maincontainer .container .position .paimage h4 {
+  color: #d3ad7f;
+  font-size: 1.3rem;
+  text-align: start;
+  padding: 2rem;
+}
+
+.maincontainer .container .paduties {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #13131a;
-  padding: 2.5rem;
   line-height: 1.5;
-  text-align: center;
-  border-radius: 10px;
+  text-align: start;
 }
 
-.container .paduties .dtitle {
+.maincontainer .container .paduties .dtitle {
   font-size: 3rem;
   color: #fff;
 }
 
-.container .paduties p {
-  font-size: 2.5rem;
+.maincontainer .container .paduties p {
+  font-size: 1.5rem;
   color: #fff;
+}
+
+@media (min-width: 450px) {
+  .maincontainer .title {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #d3ad7f;
+  }
+  .maincontainer .container {
+    gap: 1rem;
+    padding: 10px;
+  }
+  .maincontainer .container .position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #13131a;
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  }
+  .maincontainer .container .position .paimage .paimg {
+    width: 100%;
+  }
+  .maincontainer .container .position .paimage h4 {
+    color: #d3ad7f;
+    font-size: 1rem;
+    text-align: start;
+  }
+  .maincontainer .container .paduties {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    line-height: 1.5;
+    text-align: start;
+  }
+  .maincontainer .container .paduties .dtitle {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .maincontainer .container .paduties p {
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
 /*# sourceMappingURL=Hiring.module.css.map */

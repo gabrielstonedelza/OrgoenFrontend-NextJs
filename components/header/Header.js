@@ -28,46 +28,42 @@ const Header = () => {
                     <Image src={logo} alt="company logo" className={headerStyle.logo} width={70} height={70} />
                 </div>
                 {/* navlinks */}
-                <nav className={headerStyle.nav}>
-                    <ul className={headerStyle.navlinks}>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref className={headerStyle.link}>
+                <div className={headerStyle.navs}>
+                    <div className={headerStyle.navlinks}>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/" passHref className={headerStyle.link} id={headerStyle.mylink}>
                                 Home
                             </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/volunteers" passHref>
                                 Volunteers
                             </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/partners" passHref>
                                 Partners
                             </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/gallery" passHref>
                                 Gallery
                             </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
-                                Contact
-                            </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
+                        </div>
+                    
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/about" passHref>
                                 About
                             </Link>
-                        </li>
-                        <li className={headerStyle.navlinksitem}>
-                            <Link href="/" passHref>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/donate" passHref>
                                 Donate
                             </Link>
-                        </li>
+                        </div>
 
-                    </ul>
-                </nav>
+                    </div>
+                </div>
                 <div className={headerStyle.donateiconandbars}>
                     <div className={headerStyle.bars}>
                         <FaBars onClick={handleOpenedSideNav} />
@@ -81,46 +77,42 @@ const Header = () => {
                         <FaRegTimesCircle
                             className={headerStyle.close} onClick={handleClosedSideNav}
                         />
-                        <nav className={headerStyle.nav}>
-                            <ul className={headerStyle.navlinks}>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref className={headerStyle.link}>
-                                        Home
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        Volunteers
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        Partners
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        Gallery
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        Contact
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        About
-                                    </Link>
-                                </li>
-                                <li className={headerStyle.navlinksitem}>
-                                    <Link href="/" passHref>
-                                        Donate
-                                    </Link>
-                                </li>
+                        <div className={headerStyle.navs}>
+                    <div className={headerStyle.navlinks}>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/" passHref className={headerStyle.link} id={headerStyle.mylink}>
+                                Home
+                            </Link>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/volunteers" passHref>
+                                Volunteers
+                            </Link>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/partners" passHref>
+                                Partners
+                            </Link>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/gallery" passHref>
+                                Gallery
+                            </Link>
+                        </div>
+                    
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/about" passHref>
+                                About
+                            </Link>
+                        </div>
+                        <div className={headerStyle.navlinksitem}>
+                            <Link href="/donate" passHref>
+                                Donate
+                            </Link>
+                        </div>
 
-                            </ul>
-                        </nav>
+                    </div>
+                </div>
 
                     </div>
                 </div>

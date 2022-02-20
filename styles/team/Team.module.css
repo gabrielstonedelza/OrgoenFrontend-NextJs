@@ -1,3 +1,14 @@
+.mainteamcontainer {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../../public/new_wave_581.5511082066454.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .mainteamcontainer .teamtitle {
   color: #d3ad7f;
   padding: 2.5rem;

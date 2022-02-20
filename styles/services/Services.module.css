@@ -1,10 +1,21 @@
-.maincontainer {
+.myservicecontainer {
+  position: relative;
+  width: 100%;
+  z-index: -2;
+  background-image: url("../../public/new_wave_604.781977647963.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.myservicecontainer .maincontainer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.maincontainer .serviceheading {
+.myservicecontainer .maincontainer .serviceheading {
   padding: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +27,7 @@
   color: #d3ad7f;
 }
 
-.maincontainer .servicecontainer {
+.myservicecontainer .maincontainer .servicecontainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
@@ -24,7 +35,7 @@
   gap: 2rem;
 }
 
-.maincontainer .servicecontainer .box {
+.myservicecontainer .maincontainer .servicecontainer .box {
   width: 100%;
   background: #13131a;
   padding: 2.5rem;
@@ -43,26 +54,26 @@
   gap: 2rem;
 }
 
-.maincontainer .servicecontainer .box:hover {
+.myservicecontainer .maincontainer .servicecontainer .box:hover {
   background: rgba(39, 39, 39, 0.705);
 }
 
-.maincontainer .servicecontainer .box:hover .btn {
+.myservicecontainer .maincontainer .servicecontainer .box:hover .btn {
   letter-spacing: 0.2rem;
 }
 
-.maincontainer .servicecontainer .box .title {
+.myservicecontainer .maincontainer .servicecontainer .box .title {
   color: #d3ad7f;
   font-size: 2rem;
 }
 
-.maincontainer .servicecontainer .box .scontents {
+.myservicecontainer .maincontainer .servicecontainer .box .scontents {
   color: #fff;
   line-height: 1.9;
   font-size: 1.8rem;
 }
 
-.maincontainer .servicecontainer .box .scontents:hover {
+.myservicecontainer .maincontainer .servicecontainer .box .scontents:hover {
   letter-spacing: .2rem;
 }
 /*# sourceMappingURL=Services.module.css.map */

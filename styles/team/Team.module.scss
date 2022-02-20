@@ -1,6 +1,15 @@
 @import "../variable";
 
 .mainteamcontainer {
+  position: relative;
+  width: 100%;
+  // height: 50vh;
+  z-index: 1;
+  background-image: url("../../public/new_wave_581.5511082066454.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   .teamtitle {
     color: $main-color;
     padding: 2.5rem;
@@ -10,7 +19,6 @@
   }
   .myteam {
     max-width: 1200px;
-    // height: 600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));

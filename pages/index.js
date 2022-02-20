@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../components/header/Header'
 import Vidback from '../components/vidback/Vidback'
 import Hiring from '../components/hiring/Hiring'
 import Services from '../components/services/Services'
@@ -24,6 +23,7 @@ import StorySeven from "../components/modals/StorySeven";
 import Backdrop from "../components/Backdrop";
 import StoryOneModal from "../components/modals/StoryOneModal";
 import ContactUs from "../components/contact/Contact"
+import Footer from '../components/footer/Footer'
 
 export default function Home() {
   const [openStoryOneModal, setOpenStoryOneModal] = useState(false);
@@ -90,12 +90,9 @@ export default function Home() {
       {openStorySevenModal && <StorySeven />}
       <Vidback />
       <Hiring />
-      <hr />
       <Services />
-      <hr />
       <Team />
-      <hr />
-      <div>
+      <div className={storyStyles.mainback}>
         <h3 className={storyStyles.storytag}>
           Success Stories
         </h3>
@@ -209,6 +206,9 @@ export default function Home() {
         </div>
       </div>
       <hr />
+      <ContactUs />
+      <Footer />
+    
     </div>
   )
 }

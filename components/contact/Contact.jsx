@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import styles from "../styles/AddVolunteerForm.module.css";
+import styles from "../../styles/contact/ContactStyle.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 var FormData = require("form-data");
@@ -42,12 +42,22 @@ const ContactUs = () => {
     return <div>
         <div className={styles.myform}>
             <ToastContainer />
+                    
             <div className={styles.formcontainer}>
+                <div className={styles.mylocationandmap}>
+                <h3>Locations</h3>
                 <div className={styles.formaps}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1237.4238900487221!2d-88.25066052555648!3d41.56857610837526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e8ca1e0cfc507%3A0x84ed5fe1e4ef511b!2s2606%20Mirage%20Ave%2C%20Plainfield%2C%20IL%2060586%2C%20USA!5e0!3m2!1sen!2sgh!4v1645018352685!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div className={styles.location}>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1237.4238900487221!2d-88.25066052555648!3d41.56857610837526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e8ca1e0cfc507%3A0x84ed5fe1e4ef511b!2s2606%20Mirage%20Ave%2C%20Plainfield%2C%20IL%2060586%2C%20USA!5e0!3m2!1sen!2sgh!4v1645018352685!5m2!1sen!2sgh" allowfullscreen="true" loading="lazy"></iframe>
+                        <h4>United States</h4>
+                    </div>
+                    <div className={styles.location}>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.515732199357!2d-0.14579084921074958!3d5.638246895892713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf84b20789f21b%3A0x18bf1fd36bce0309!2s12%20Boundary%20Rd%2C%20Accra!5e0!3m2!1sen!2sgh!4v1645293125423!5m2!1sen!2sgh" allowfullscreen="true" loading="lazy"></iframe>
+                        <h4>Ghana</h4>
+                    </div>
+                </div>
                 </div>
                 <div className={styles.forform}>
-
                     <h3>Get In Touch.</h3>
                     <form onSubmit={handleContact}>
                         <div className={styles.formcontrol}>

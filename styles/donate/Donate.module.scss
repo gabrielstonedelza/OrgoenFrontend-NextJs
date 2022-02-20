@@ -1,0 +1,58 @@
+@import "../variable";
+
+.donatecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 220px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  
+    .donatebox {
+      width: 350px;
+      height: 250px;
+      background: $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      border: $border;
+      transition: ease 1s;
+      gap: 1rem;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+        &:hover {
+          border: 1px silver;
+          border-radius: 10px;
+          background: rgba(39, 39, 39, 0.705);
+          letter-spacing: .2rem;
+        }
+      .paybutton {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        border: $border;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: $main-color;
+        background-color: hsla(0,0%,100%,0.2);
+        &:hover {
+          transform: scale(0.98);
+          background-color: hsla(0,0%,100%,0.4);
+        }
+      }
+    }
+  }
+  

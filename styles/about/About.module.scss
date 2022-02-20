@@ -1,0 +1,73 @@
+@import "../variable";
+
+.briefhistory {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    color: $main-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h4,
+  h2 {
+    font-size: 20px;
+    color: $main-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .historycontent {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+
+  }
+  .dissolution {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+.storytag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mytitle {
+  text-align: center;
+  color: $main-color;
+}
+@media (min-width: 450px) {
+  .briefhistory {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    h3 {
+      text-align: center;
+      font-size: 20px;
+      color: $main-color;
+    }
+    h4,
+    h2 {
+      font-size: 20px;
+      color: $main-color;
+    }
+    // .historycontent {
+    //   line-height: 1.5;
+    //   font-size: 15px;
+    //   color: #fff;
+    // }
+    .dissolution {
+      line-height: 1.5;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+}
