@@ -75,7 +75,7 @@
 
 .mainteamcontainer .myteam .teambox .myimageandsocial .myimage {
   border-radius: 50%;
-  border: 1px solid 0.1rem solid rgba(255, 255, 255, 0.3);
+  border: 0.1rem solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .mainteamcontainer .myteam .teambox .myimageandsocial .sociallinks {

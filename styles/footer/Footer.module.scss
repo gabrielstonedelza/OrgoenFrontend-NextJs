@@ -29,13 +29,45 @@
       }
     }
   }
+  .contactnumbers{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    .icon {
+      padding: 1rem;
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      color: #fff;
+      border: $border;
+      margin: 0.3rem;
+      border-radius: 50%;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    span{
+      font-size: 1.5rem;
+    }
+  }
   .credits {
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
     font-size: 2rem;
     font-weight: lighter;
     padding: 1.5rem;
     p {
       color: $main-color;
       text-transform: none;
+    }
+    a{
+      color: white;
     }
   }
 }

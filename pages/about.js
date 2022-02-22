@@ -1,6 +1,19 @@
 
 import Head from "next/head";
 import aboutStyles from "../styles/about/About.module.css";
+import Image from 'next/image';
+import Eagel from '../assets/images/flying-eagle.gif'
+import Kangaroo from '../assets/images/giphy.gif'
+import Nested from '../assets/images/unnamed.gif'
+import Assessment from '../assets/images/check-list.png'
+import Development from '../assets/images/developing.png'
+import Planning from '../assets/images/planning.png'
+import Implementation from '../assets/images/schedule.png'
+import Evaluation from '../assets/images/evaluation.png'
+import Star from '../assets/images/star.png'
+import {
+  FaLongArrowAltRight
+} from "react-icons/fa";
 
 
 const aboutus = () => {
@@ -47,7 +60,65 @@ const aboutus = () => {
             Please disperse any item or belongings in our name .
           </p>
         </div>
-        
+        <div className={aboutStyles.carecontainer}>
+
+          <div className={aboutStyles.careplans}>
+            <h3 className={aboutStyles.careplantitle}>Client Plan</h3>
+            <br />
+            <p className={aboutStyles.careplancontent}>There are three various plans available at Orgeonofstars under which a client may fall.A client is given a plan based you their situation,age and gender.These plans include </p>
+            <br /><br />
+            <div className={aboutStyles.plans}>
+              <div className={aboutStyles.img}>
+                <Image src={Eagel} alt="care plan" width={150} height={150} />
+                <h4>Eagel</h4>
+              </div>
+              <div className={aboutStyles.img}>
+                <Image src={Kangaroo} alt="care plan" width={150} height={150} />
+                <h4>Kangaroo</h4>
+              </div>
+              <div className={aboutStyles.img}>
+
+                <Image src={Nested} alt="care plan" width={150} height={150} />
+                <h4>Nested</h4>
+              </div>
+            </div>
+            <br /><br />
+            <h3 className={aboutStyles.careplantitle}>Client Process</h3>
+            <br />
+            <p>After a plan to allocated to the client,he or she has to go through a six-stage assessment process in order to become a successful client.One can become a client if he or she passes all these stages and become a star.</p>
+            <br /><br />
+            <div className={aboutStyles.stages}>
+              <div className={aboutStyles.img}>
+                <Image src={Assessment} alt="care plan" width={150} height={150} />
+                <h4>1.Assessment</h4>
+              </div>
+
+              <div className={aboutStyles.img}>
+                <Image src={Development} alt="care plan" width={150} height={150} />
+                <h4>2.Development</h4>
+              </div>
+              <div className={aboutStyles.img}>
+                <Image src={Planning} alt="care plan" width={150} height={150} />
+                <h4>3.Planning</h4>
+              </div>
+              <div className={aboutStyles.img}>
+                <Image src={Implementation} alt="care plan" width={150} height={150} />
+                <h4>4.Implementation</h4>
+              </div>
+              <div className={aboutStyles.img}>
+                <Image src={Evaluation} alt="care plan" width={150} height={150} />
+                <h4>5.Evaluation</h4>
+              </div>
+              <div className={aboutStyles.img}>
+                <Image src={Star} alt="care plan" width={150} height={150} />
+                <h4>6.Star</h4>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </>
   );

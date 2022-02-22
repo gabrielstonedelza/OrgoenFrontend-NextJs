@@ -1,0 +1,25 @@
+.privacycontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.privacycontainer h2 {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.privacycontainer h3 {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 18px;
+}
+
+.privacycontainer p {
+  color: #fff;
+}
+/*# sourceMappingURL=Privacy.module.css.map */

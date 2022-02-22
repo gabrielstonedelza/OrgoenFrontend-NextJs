@@ -13,6 +13,7 @@ const VolunteersList = ({ data }) => {
               pic={volunteer.get_volunteer_photo}
               country={volunteer.country}
               profession={volunteer.profession}
+              id={volunteer.id}
             />
           </div>
         ))}

@@ -51,6 +51,87 @@
   color: #d3ad7f;
 }
 
+.carecontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 2rem;
+}
+
+.carecontainer .careplans h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #d3ad7f;
+  padding: 2rem;
+}
+
+.carecontainer .careplans p {
+  line-height: 1.5;
+  font-size: 20px;
+  color: #fff;
+}
+
+.carecontainer .careplans .plans {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.carecontainer .careplans .plans .img {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.carecontainer .careplans .plans .img h4 {
+  color: #d3ad7f;
+  text-align: center;
+  padding: 2rem;
+  font-size: 14px;
+}
+
+.carecontainer .careplans .stages {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carecontainer .careplans .stages .img {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.carecontainer .careplans .stages .img h4 {
+  color: #d3ad7f;
+  text-align: center;
+  padding: 2rem;
+  font-size: 14px;
+}
+
 @media (min-width: 450px) {
   .briefhistory {
     max-width: 1200px;
@@ -71,6 +152,78 @@
     line-height: 1.5;
     font-size: 15px;
     color: #fff;
+  }
+  .carecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 2rem;
+  }
+  .carecontainer .careplans h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #d3ad7f;
+    padding: 2rem;
+  }
+  .carecontainer .careplans p {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+  }
+  .carecontainer .careplans .plans {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .carecontainer .careplans .plans .img {
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .carecontainer .careplans .plans .img h4 {
+    color: #d3ad7f;
+    text-align: center;
+    padding: 2rem;
+    font-size: 14px;
+  }
+  .carecontainer .careplans .stages {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .carecontainer .careplans .stages .img {
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .carecontainer .careplans .stages .img h4 {
+    color: #d3ad7f;
+    text-align: center;
+    padding: 2rem;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=About.module.css.map */

@@ -23,13 +23,13 @@
     line-height: 1.5;
     font-size: 20px;
     color: #fff;
-
   }
   .dissolution {
     line-height: 1.5;
     font-size: 20px;
     color: #fff;
   }
+  // care plan
 }
 .storytag {
   display: flex;
@@ -43,12 +43,76 @@
   text-align: center;
   color: $main-color;
 }
+
+// client process and care plane
+.carecontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 2rem;
+
+  .careplans {
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 25px;
+      color: $main-color;
+      padding: 2rem;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 20px;
+      color: #fff;
+    }
+    .plans {
+      padding: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .img {
+        border: $border;
+        border-radius: 20px;
+        padding: 10px;
+        h4{
+          color: $main-color;
+          text-align: center;
+          padding: 2rem;
+          font-size: 14px;
+        }
+      }
+    }
+    .stages {
+      padding: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .img {
+        border: $border;
+        border-radius: 20px;
+        padding: 10px;
+        h4{
+          color: $main-color;
+          text-align: center;
+          padding: 2rem;
+          font-size: 14px;
+        }
+      }
+      
+    }
+  }
+}
+
+// media queries
 @media (min-width: 450px) {
   .briefhistory {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  
+
     h3 {
       text-align: center;
       font-size: 20px;
@@ -59,15 +123,70 @@
       font-size: 20px;
       color: $main-color;
     }
-    // .historycontent {
-    //   line-height: 1.5;
-    //   font-size: 15px;
-    //   color: #fff;
-    // }
     .dissolution {
       line-height: 1.5;
       font-size: 15px;
       color: #fff;
+    }
+  }
+  .carecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 2rem;
+  
+    .careplans {
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 25px;
+        color: $main-color;
+        padding: 2rem;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        color: #fff;
+      }
+      .plans {
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .img {
+          border: $border;
+          border-radius: 20px;
+          padding: 10px;
+          h4{
+            color: $main-color;
+            text-align: center;
+            padding: 2rem;
+            font-size: 14px;
+          }
+        }
+      }
+      .stages {
+        padding: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        .img {
+          border: $border;
+          border-radius: 20px;
+          padding: 10px;
+          h4{
+            color: $main-color;
+            text-align: center;
+            padding: 2rem;
+            font-size: 14px;
+          }
+        }
+        
+      }
     }
   }
 }

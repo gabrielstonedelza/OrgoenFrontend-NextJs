@@ -1,16 +1,22 @@
 import volunteerStyle from "../../styles/volunteers/VolunteerCard.module.css";
 import Image from "next/image";
+import { FaTrash } from "react-icons/fa";
+import Link from "next/link";
 
 const VolunteerItem = ({
     name,
     pic,
     country,
     profession,
+    id
 }) => {
     return (
         <>
-        
+
             <div className={volunteerStyle.containerbox}>
+                <Link href="/volunteer/[id]" as={`/volunteer/${id}`} passHref>
+                    <FaTrash className={volunteerStyle.trash} title="Stop being a volunteer and delete all your personal information"/>
+                </Link>
                 <Image
                     src={pic}
                     alt="volunteer's picture"

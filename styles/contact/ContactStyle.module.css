@@ -71,6 +71,7 @@
           flex: 1 1 45rem;
   background-color: #13131a;
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
   padding: 2rem;
 }
 
