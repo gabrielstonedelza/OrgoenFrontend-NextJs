@@ -22,7 +22,7 @@ const partners = ({data}) => {
 };
 
 export async function getServerSideProps() {
-    const res = await fetch(`http://127.0.0.1:8000/get_partners`);
+    const res = await fetch(`https://orgeonofstars.xyz/get_partners`);
     const data = await res.json();
     
     return { props: { data } };

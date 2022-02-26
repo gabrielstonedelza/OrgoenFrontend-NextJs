@@ -21,7 +21,7 @@ const ContactUs = () => {
     const handleContact = async (e) => {
         e.preventDefault();
         toast.success("Please wait,processing your data")
-        const apiUrl = 'http://127.0.0.1:8000/add_to_contacts/'
+        const apiUrl = 'https://orgeonofstars.xyz/add_to_contacts/'
         axios({
             method: "post",
             url: apiUrl,

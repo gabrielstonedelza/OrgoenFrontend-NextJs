@@ -16,7 +16,7 @@ const Volunteer = ({ v_detail }) => {
   const handleDeleteVolunteer = (e) => {
     e.preventDefault();
     toast.success("Please wait,removing your data");
-    const apiUrl = `http://127.0.0.1:8000/delete_volunteer/${v_detail.id}`;
+    const apiUrl = `https://orgeonofstars.xyz/delete_volunteer/${v_detail.id}`;
     if(mobileNumber == v_num){
         axios({
             method: "delete",
@@ -90,7 +90,7 @@ const Volunteer = ({ v_detail }) => {
 
 export const getStaticProps = async (context) => {
   const res = await fetch(
-    `http://127.0.0.1:8000/volunteer_detail/${context.params.id}`
+    `https://orgeonofstars.xyz/volunteer_detail/${context.params.id}`
   );
   const v_detail = await res.json();
 
@@ -102,7 +102,7 @@ export const getStaticProps = async (context) => {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://127.0.0.1:8000/get_volunteers`);
+  const res = await fetch(`https://orgeonofstars.xyz/get_volunteers`);
   const volunteers = await res.json();
   const ids = volunteers.map((volunteer) => volunteer.id);
   const paths = ids.map((id) => ({ params: { id: id.toString() } }));

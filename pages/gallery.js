@@ -13,7 +13,7 @@ const gallery = ({data}) => {
 };
 
 export async function getServerSideProps() {
-    const res = await fetch(`http://127.0.0.1:8000/get_gallery_list`);
+    const res = await fetch(`https://orgeonofstars.xyz/get_gallery_list`);
     const data = await res.json();
     
     return { props: { data } };

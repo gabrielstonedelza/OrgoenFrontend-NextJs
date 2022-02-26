@@ -14,7 +14,7 @@ const Partner = ({ p_detail }) => {
   const handleDeleteVolunteer = (e) => {
     e.preventDefault();
     toast.success("Please wait,removing your data");
-    const apiUrl = `http://127.0.0.1:8000/delete_partner/${p_detail.id}`;
+    const apiUrl = `https://orgeonofstars.xyz/delete_partner/${p_detail.id}`;
     if(mobileNumber == p_num){
         axios({
             method: "delete",
@@ -78,7 +78,7 @@ const Partner = ({ p_detail }) => {
 
 export const getStaticProps = async (context) => {
   const res = await fetch(
-    `http://127.0.0.1:8000/partner_detail/${context.params.id}`
+    `https://orgeonofstars.xyz/partner_detail/${context.params.id}`
   );
   const p_detail = await res.json();
 
@@ -90,7 +90,7 @@ export const getStaticProps = async (context) => {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://127.0.0.1:8000/get_partners`);
+  const res = await fetch(`https://orgeonofstars.xyz/get_partners`);
   const partners = await res.json();
   const ids = partners.map((partner) => partner.id);
   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
