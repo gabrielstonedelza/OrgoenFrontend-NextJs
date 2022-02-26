@@ -29,7 +29,13 @@ const ContactUs = () => {
             headers: { "Content-Type": "multipart/form-data" },
         })
             .then(function (response) {
-                router.push('/')
+                setTimeout(function () {
+                    router.push('/')
+                    setName("")
+                    setEmail("")
+                    setPhone("")
+                    setMessage("")
+                },3000)
             })
             .catch((error) => {
                 if (error.response) {
@@ -41,7 +47,7 @@ const ContactUs = () => {
 
     return <div>
         <div className={styles.myform}>
-            <ToastContainer />
+            <ToastContainer className="foo" style={{ width: "320px",fontSize: "15px" }}/>
                     
             <div className={styles.formcontainer}>
                 <div className={styles.mylocationandmap}>

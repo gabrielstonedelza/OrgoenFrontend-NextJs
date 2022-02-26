@@ -1,4 +1,12 @@
-.donatecontainer {
+.donatemainbox h4 {
+  margin-top: 100px;
+  color: #d3ad7f;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.donatemainbox .donatecontainer {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 220px;
@@ -16,7 +24,7 @@
       flex-wrap: wrap;
 }
 
-.donatecontainer .donatebox {
+.donatemainbox .donatecontainer .donatebox {
   width: 350px;
   height: 250px;
   background: #13131a;
@@ -45,14 +53,14 @@
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.donatecontainer .donatebox:hover {
+.donatemainbox .donatecontainer .donatebox:hover {
   border: 1px silver;
   border-radius: 10px;
   background: rgba(39, 39, 39, 0.705);
   letter-spacing: .2rem;
 }
 
-.donatecontainer .donatebox .paybutton {
+.donatemainbox .donatecontainer .donatebox .paybutton {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -66,7 +74,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.donatecontainer .donatebox .paybutton:hover {
+.donatemainbox .donatecontainer .donatebox .paybutton:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
   background-color: rgba(255, 255, 255, 0.4);

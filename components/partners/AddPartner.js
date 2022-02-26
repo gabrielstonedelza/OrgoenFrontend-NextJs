@@ -27,7 +27,9 @@ const AddPartner = () => {
         headers: { "Content-Type": "multipart/form-data" },
     })
         .then(function (response) {
+          setTimeout(function () {
             router.push('/partners')
+          },3000)
         })
         .catch((error) => {
             if (error.response) {
@@ -43,7 +45,7 @@ const AddPartner = () => {
   return (
     <div>
       <div className={styles.myform}>
-        <ToastContainer />
+        <ToastContainer className="foo" style={{ width: "320px",fontSize: "15px" }}/>
         <h3>Partner with us</h3>
         <form onSubmit={handleAddPartner}>
           <div className={styles.formcontrol}>

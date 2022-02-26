@@ -41,7 +41,9 @@ const AddVolunteer = () => {
             headers: { "Content-Type": "multipart/form-data" },
         })
             .then(function (response) {
-                router.push('/volunteers')
+                setTimeout(function () {
+                    router.push('/volunteers')
+                },3000)
             })
             .catch((error) => {
                 if (error.response) {
@@ -55,7 +57,7 @@ const AddVolunteer = () => {
     };
     return (
         <div className={styles.myform}>
-            <ToastContainer />
+            <ToastContainer className="foo" style={{ width: "320px",fontSize: "15px" }}/>
             <h3>Become a volunteer</h3>
             <form onSubmit={handleAddVolunteer}>
                 <div className={styles.formcontrol}>

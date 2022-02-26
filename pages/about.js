@@ -63,9 +63,9 @@ const aboutus = () => {
         <div className={aboutStyles.carecontainer}>
 
           <div className={aboutStyles.careplans}>
-            <h3 className={aboutStyles.careplantitle}>Client Plan</h3>
+            <h3 className={aboutStyles.careplantitle}>Client Plans</h3>
             <br />
-            <p className={aboutStyles.careplancontent}>There are three various plans available at Orgeonofstars under which a client may fall.A client is given a plan based you their situation,age and gender.These plans include </p>
+            <p className={aboutStyles.careplancontent}>There are three various plans available when it comes to choosing a client.A client is given a plan based you their situation,age and gender.These plans include </p>
             <br /><br />
             <div className={aboutStyles.plans}>
               <div className={aboutStyles.img}>
@@ -83,7 +83,7 @@ const aboutus = () => {
               </div>
             </div>
             <br /><br />
-            <h3 className={aboutStyles.careplantitle}>Client Process</h3>
+            <h3 className={aboutStyles.careplantitle}>Client Processes</h3>
             <br />
             <p>After a plan to allocated to the client,he or she has to go through a six-stage assessment process in order to become a successful client.One can become a client if he or she passes all these stages and become a star.</p>
             <br /><br />

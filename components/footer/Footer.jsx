@@ -29,8 +29,8 @@ const Footer = () => {
             </div>
             <div className={footerstyle.credits}>
                 <p>&copy; 2022 orgeonofstars.org</p>
-                <Link href="/">Terms</Link> |
-                <Link href="/privacy">Privacy</Link>
+                {/* <Link href="/">Terms</Link> |
+                <Link href="/privacy">Privacy</Link> */}
             </div>
 
         </div>
