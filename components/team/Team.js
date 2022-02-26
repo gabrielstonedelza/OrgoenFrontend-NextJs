@@ -24,10 +24,10 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <a href="https://web.facebook.com/joselyn.amenyo" target="_blank">
+                            <a href="https://web.facebook.com/joselyn.amenyo" target="_blank" rel="noreferrer">
                                 <FaFacebookF className={styles.socialicon} />
                             </a>
-                            <a href="https://www.instagram.com/josekyn4448/" target="_blank">
+                            <a href="https://www.instagram.com/josekyn4448/" target="_blank" rel="noreferrer">
                                 <FaInstagram className={styles.socialicon} />
                             </a>
                         </div>
@@ -48,19 +48,19 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <a href="https://web.facebook.com/connect.django/" target="_blank">
+                            <a href="https://web.facebook.com/connect.django/" target="_blank" rel="noreferrer">
                                 <FaFacebookF className={styles.socialicon} />
                             </a>
-                            <a href="https://www.instagram.com/gabriel_stonedelza/" target="_blank">
+                            <a href="https://www.instagram.com/gabriel_stonedelza/" target="_blank" rel="noreferrer">
                                 <FaInstagram className={styles.socialicon} />
                             </a>
-                            <a href="https://www.linkedin.com/in/gabriel-akwasi-asare-2367021a6/" target="_blank">
+                            <a href="https://www.linkedin.com/in/gabriel-akwasi-asare-2367021a6/" target="_blank" rel="noreferrer">
                                 <FaLinkedin className={styles.socialicon} />
                             </a>
-                            <a href="https://github.com/gabrielstonedelza" target="_blank">
+                            <a href="https://github.com/gabrielstonedelza" target="_blank" rel="noreferrer">
                                 <FaGithub className={styles.socialicon} />
                             </a>
-                            <a href="https://twitter.com/gabriel_stone_" target="_blank">
+                            <a href="https://twitter.com/gabriel_stone_" target="_blank" rel="noreferrer">
                                 <FaTwitter className={styles.socialicon} />
                             </a>
                         </div>
@@ -81,10 +81,10 @@ const Team = () => {
                             objectFit="cover"
                         />
                         <div className={styles.sociallinks}>
-                            <a href="https://web.facebook.com/asti.christlike" target="_blank">
+                            <a href="https://web.facebook.com/asti.christlike" target="_blank" rel="noreferrer">
                                 <FaFacebookF className={styles.socialicon} />
                             </a>
-                            <a href="https://www.instagram.com/asti_van_sweet/" target="_blank">
+                            <a href="https://www.instagram.com/asti_van_sweet/" target="_blank" rel="noreferrer">
                                 <FaInstagram className={styles.socialicon} />
                             </a>
                         </div>

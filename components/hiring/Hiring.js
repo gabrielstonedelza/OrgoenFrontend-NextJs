@@ -29,9 +29,9 @@ const Hiring = () => {
                     </div>
                     <div className={hiringStyle.paduties}>
                         <h3 className={hiringStyle.dtitle}>Duties</h3>
-                        <p>1.Responsible for optimizing company's social media goals.</p>
-                        <p>2.Responding to customers' queries via social media.</p>
-                        <p>3.Managing the company's social media visibility.</p>
+                        <p>1.Responsible for optimizing companys social media goals.</p>
+                        <p>2.Responding to customers queries via social media.</p>
+                        <p>3.Managing the companys social media visibility.</p>
                         <p>4.Reviewing social media campaigns.</p>
                         <p>NB: Send CV or Resume to orgeonofstars@gmail.com</p>
                     </div>
