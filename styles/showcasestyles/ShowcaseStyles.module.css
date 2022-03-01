@@ -128,12 +128,4 @@
 }
 
 /* media queries */
-@media (max-width: 768px) {
-  .container {
-    display: none;
-  }
-  .smallbackcontainer {
-    display: block;
-  }
-}
 /*# sourceMappingURL=ShowcaseStyles.module.css.map */
