@@ -5,11 +5,11 @@ import back from '../../public/back.jpg'
 const SmallBack = () => {
   return (
     <div className={vidstyles.smallbackcontainer}>
-        <div className={vidstyles.smallbackback}></div>
-        <div className={vidstyles.smallbackoverlay}></div>
+        <Image src={back} alt="background image" layout="responsive" className={vidstyles.smallimage}/>
         <div className={vidstyles.smallcontents}>
             <h3>Orgeonofstars</h3>
         </div>
+        
         </div>
   )
 }

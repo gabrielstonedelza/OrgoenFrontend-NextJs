@@ -41,91 +41,26 @@
   pointer-events: none;
 }
 
-.vheader {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
-  text-align: center;
-}
-
-.vheader .fullscreenvideowrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.vheader .fullscreenvideowrap video {
-  min-width: 100%;
-  min-height: 100vh;
-}
-
-.vheader .headeroverlay {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.596);
-}
-
 .smallbackcontainer {
   display: none;
   width: 100%;
-  height: 100vh;
 }
 
-.smallbackcontainer .smallbackback {
-  width: 100%;
-  height: 100%;
-  background: url("../../public/back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  position: absolute;
-  z-index: 1;
-}
-
-.smallbackcontainer .smallbackoverlay {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.589);
-  z-index: 1;
-}
-
-.smallbackcontainer .smallcontents {
-  position: relative;
-  z-index: 1;
-}
-
-.smallbackcontainer .smallcontents h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #d3ad7f;
-  padding-top: 320px;
-  font-size: 40px;
+.smallbackcontainer .smallimage {
+  opacity: 0.4;
 }
 
 /* media queries */
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .smallbackcontainer {
+    display: block;
+  }
+  .smallbackcontainer .smallimage {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*# sourceMappingURL=ShowcaseStyles.module.css.map */
