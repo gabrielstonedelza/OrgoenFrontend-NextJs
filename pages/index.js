@@ -24,6 +24,7 @@ import Backdrop from "../components/Backdrop";
 import StoryOneModal from "../components/modals/StoryOneModal";
 import ContactUs from "../components/contact/Contact"
 import Footer from '../components/footer/Footer'
+import SmallBack from '../components/smallback/SmallBack'
 
 export default function Home() {
   const [openStoryOneModal, setOpenStoryOneModal] = useState(false);
@@ -89,6 +90,7 @@ export default function Home() {
       {openStorySixModal && <StorySix />}
       {openStorySevenModal && <StorySeven />}
       <Vidback />
+      <SmallBack />
       <Hiring />
       <Services />
       <Team />
