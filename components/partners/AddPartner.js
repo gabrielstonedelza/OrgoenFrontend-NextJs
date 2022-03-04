@@ -19,7 +19,7 @@ const AddPartner = () => {
   const handleAddPartner = async (e) => {
     e.preventDefault();
     toast.success("Please wait,processing your data")
-    const apiUrl = 'http://127.0.0.1:8000/add_partner/'
+    const apiUrl = 'https://orgeonofstars.xyz/add_partner/'
     axios({
         method: "post",
         url: apiUrl,
