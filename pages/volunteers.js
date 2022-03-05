@@ -5,8 +5,6 @@ import volunteerStyle from "../styles/volunteers/VolunteerCard.module.css";
 import Link from "next/link";
 
 const volunteers = ({ data }) => {
-  console.log(data)
-  console.log(data['get_volunteer_photo'])
   return (
     <div>
       <Head>
