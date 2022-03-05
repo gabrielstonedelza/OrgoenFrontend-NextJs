@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["https://www.orgeonofstars.org/"]
+    domains: ["https://orgeonofstars.xyz/","orgeonofstars.xyz/"]
   }
 }
