@@ -10,7 +10,7 @@ const Hiring = () => {
             <div className={hiringStyle.container}>
                 <div className={hiringStyle.position}>
                     <div className={hiringStyle.paimage}>
-                        <Image src={PA} alt="pa image" className={hiringStyle.paimg} width={100} height={100} />
+                        <Image src={PA} alt="pa image" className={hiringStyle.paimg} width={100} height={100} priority/>
                         <h4>Personal Asssistant</h4>
                     </div>
                     <div className={hiringStyle.paduties}>
@@ -24,7 +24,7 @@ const Hiring = () => {
                 </div>
                 <div className={hiringStyle.position}>
                     <div className={hiringStyle.paimage}>
-                        <Image src={IT} alt="pa image" className={hiringStyle.paimg} width={100} height={100} />
+                        <Image src={IT} alt="pa image" className={hiringStyle.paimg} width={100} height={100} priority/>
                         <h4>Social Media Rep</h4>
                     </div>
                     <div className={hiringStyle.paduties}>

@@ -5,7 +5,7 @@ import back from '../../public/back.jpg'
 const SmallBack = () => {
   return (
     <div className={vidstyles.smallbackcontainer}>
-        <Image src={back} alt="background image" layout="responsive" className={vidstyles.smallimage}/>
+        <Image src={back} alt="background image" layout="responsive" className={vidstyles.smallimage} priority/>
         <div className={vidstyles.smallcontents}>
             <h3>Orgeonofstars</h3>
         </div>

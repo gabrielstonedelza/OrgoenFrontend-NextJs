@@ -24,6 +24,7 @@ const GalleryItem = ({ image }) => {
           layout="intrinsic"
           className={galleryStyle.img}
           onClick={() => setToggler(!toggler)}
+          priority
         />
       </div>
     </>

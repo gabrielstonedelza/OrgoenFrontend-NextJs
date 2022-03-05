@@ -31,7 +31,7 @@ const Services = () => {
                         you during our prayer sessions.
                     </p>
                 </div>
-                    <Image src={Christ} alt="knowing Christ" width={50} height={50} className={serviceStyle.img}/>
+                    <Image src={Christ} alt="knowing Christ" width={50} height={50} className={serviceStyle.img} priority/>
                    
                 </div>
                 <div className={serviceStyle.box}>
@@ -41,7 +41,7 @@ const Services = () => {
                         We offer counselling sessions to children struggling with drug addictions, behavior problems, abuse victims and etc. Our mentorship programs also offers guidance for carrier and talents development.
                     </p>
                 </div>
-                    <Image src={Counselling} alt="Counselling" width={50} height={50} className={serviceStyle.img}/>
+                    <Image src={Counselling} alt="Counselling" width={50} height={50} className={serviceStyle.img} priority/>
                     
                 </div>
                 <div className={serviceStyle.box}>
@@ -55,7 +55,7 @@ const Services = () => {
                         are some of the courses we offer
                     </p>
                 </div>
-                    <Image src={Education} alt="Education" width={50} height={50} className={serviceStyle.img}/>
+                    <Image src={Education} alt="Education" width={50} height={50} className={serviceStyle.img} priority/>
                     
                 </div>
                 <div className={serviceStyle.box}>
@@ -73,7 +73,7 @@ const Services = () => {
                     <p> 3. Family must adhere to medical treatment at all times.
                     </p>
                 </div>
-                    <Image src={Medical} alt="Medical Aid" width={50} height={50} className={serviceStyle.img}/>
+                    <Image src={Medical} alt="Medical Aid" width={50} height={50} className={serviceStyle.img} priority/>
                     </div>
                     
                 <div className={serviceStyle.box}>
@@ -83,7 +83,7 @@ const Services = () => {
                         We provide shelters for temporal stay for children struggling with accommodation, whiles finding a permanent home for them. Orphanage home for orphans.
                     </p>
                 </div>
-                    <Image src={Shelter} alt="Shelter" width={50} height={50} className={serviceStyle.img}/>
+                    <Image src={Shelter} alt="Shelter" width={50} height={50} className={serviceStyle.img} priority/>
                     
                 </div>
             </div>

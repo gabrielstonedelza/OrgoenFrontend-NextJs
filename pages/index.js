@@ -111,6 +111,7 @@ export default function Home() {
               className={storyStyles.img}
               priority
               objectFit="cover"
+              
             />
           </div>
           <div

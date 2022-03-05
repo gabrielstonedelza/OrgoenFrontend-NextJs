@@ -22,6 +22,7 @@ const Team = () => {
                             height={150}
                             className={styles.myimage}
                             objectFit="cover"
+                            priority
                         />
                         <div className={styles.sociallinks}>
                             <a href="https://web.facebook.com/joselyn.amenyo" target="_blank" rel="noreferrer">
@@ -46,6 +47,7 @@ const Team = () => {
                             height={150}
                             className={styles.myimage}
                             objectFit="cover"
+                            priority
                         />
                         <div className={styles.sociallinks}>
                             <a href="https://web.facebook.com/connect.django/" target="_blank" rel="noreferrer">
@@ -79,6 +81,7 @@ const Team = () => {
                             height={150}
                             className={styles.myimage}
                             objectFit="cover"
+                            priority
                         />
                         <div className={styles.sociallinks}>
                             <a href="https://web.facebook.com/asti.christlike" target="_blank" rel="noreferrer">
@@ -103,6 +106,7 @@ const Team = () => {
                             height={150}
                             className={styles.myimage}
                             objectFit="cover"
+                            priority
                         />
                         <div className={styles.teaminfo}>
                             <h3 className={styles.teamname}>James Yaw Anane</h3>
@@ -119,6 +123,7 @@ const Team = () => {
                             height={150}
                             className={styles.myimage}
                             objectFit="cover"
+                            priority
                         />
                         <div className={styles.teaminfo}>
                             <h3 className={styles.teamname}>Eunice Acheampong</h3>

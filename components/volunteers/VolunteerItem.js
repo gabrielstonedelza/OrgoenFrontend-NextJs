@@ -24,6 +24,7 @@ const VolunteerItem = ({
                     height={150}
                     className={volunteerStyle.img}
                     layout="intrinsic"
+                    priority
                 />
                 <h1 className={volunteerStyle.name}>{name}</h1>
                 <small className={volunteerStyle.muted}>{profession}</small>
