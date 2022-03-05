@@ -2,7 +2,7 @@ import VolunteerItem from "../volunteers/VolunteerItem";
 import volunteerStyle from "../../styles/volunteers/VolunteerCard.module.css";
 
 const VolunteersList = ({ data }) => {
-  console.log(data['get_volunteer_photo'])
+  
   return (
     <div>
         <h3 className={volunteerStyle.title}>Our Volunteers</h3>
