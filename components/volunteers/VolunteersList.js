@@ -9,7 +9,11 @@ const VolunteersList = ({ data }) => {
         {data.map((volunteer) => (
           <div key={volunteer.id}>
             <VolunteerItem
-              data={data}
+              name={volunteer.name}
+              pic={volunteer.get_volunteer_photo}
+              country={volunteer.country}
+              profession={volunteer.profession}
+              id={volunteer.id}
             />
           </div>
         ))}
